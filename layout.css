@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}body
+{
+background-color: rgb(165, 230, 26);
+}
+.container
+{
+ display: flex;
+ transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+.container a{
+ color: white;
+ width: 60px;
+ height: 50px;
+}
+.cont1{
+    background-color: rgb(15, 104, 193);
+ width: 100%;
+ height: 400px;
+}
+.cont1 img{
+    height: 185px;
+    width: 400px;
+}
+
+header{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   justify-content: space-between;
+    background-color: darkred;
+    height: 100px;
+    width: 100%;
+   
+}
+header h1{
+    height: 25px;
+}
+header img{
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-between;
+    list-style: none;
+    width: 600px;
+    font-display: white;
+}
+nav ul li{
+    font-size: larger;
+    font-style: italic;
+    font-display: white;
+    text-align: center;
+}
+ nav ul li a
+ {
+   text-decoration: none;
+ }
+.items{
+    display: grid;
+}
+.items nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    border: 2px crimson;
+}
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.cont1 nav ul li{
+        float:left;
+        height:20px;
+        width: auto;
+        list-style:none;
+        border: 0px solid grey;
+     }
+.cont1 nav ul li a{
+        text-decoration:none;
+        color:blueviolet;
+        display: block;
+        text-align: center;
+       background-color:lemonchiffon;
+       border-radius: 5px;
+       margin-left: 500px;
+       
+    }
+.cont1 nav ul li a:hover{
+        background-color:palegreen;
+        color:red;
+       
+    }
+.container nav ul li a
+{
+    border: 2px white;
+
+}
+.container  a:hover{
+    border: 2px;
+    width: 60px;
+    height: 50px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-name: boxani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+   
+}
+.container a:hover{
+ width: 40px;
+ height: 50px;
+ padding: 10px;
+ font-size: larger;
+ box-shadow: 10px 10px 50px yellow;
+}
+@keyframes boxani{
+   from{
+    background-color: antiquewhite;
+    color: rgb(171, 30, 30);
+   }
+   to{
+    background-color: bisque;
+    border-radius: 50%;
+    color: rgb(200, 31, 31);
+   }
+}
+.l1{
+ 
+   transition-duration: 2s;
+   transition-property: all;
+   
+}
+.l1:hover{
+    transform: rotateZ(360deg);
+
+}
+.l2{
+ 
+    transition-duration: 2s;
+    transition-property: all;
+   
+ }
+ .l2:hover{
+   transform: rotateZ(360deg);
+   background-color: rgb(223, 230, 32);
+   
+ }
+ .l3{
+ 
+    transition-duration: 2s;
+    transition-property: all;
+   
+ }
+ .l3:hover{
+    transform: rotateZ(360deg);
+ 
+ }
+ .l4{
+ 
+    transition-duration: 2s;
+    transition-property: all;
+   
+ }
+ .l4:hover{
+    transform: rotateZ(360deg);
+ 
+ }
+ .cont1{
+    transition: all 2s ease-in;
+    animation-name: cont1ani;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+ }
+ 
+ @keyframes cont1ani {
+    0%{
+        background-color: rgb(78, 180, 214);
+        width: 100%;
+    }
+    100%{
+        background-color: rgb(212, 10, 152);
+        width: 80%;
+        margin-left: 50px;
+    }
+ }
